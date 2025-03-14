@@ -27,7 +27,7 @@
     <div class="content-container">
         <div class="gallery-container">
             <div class="gallery-item">
-                <h3>Project One</h3>
+                <h3>Spooky Name Generator</h3>
                 <button onclick="window.location.href='/spooky'">
                     <img src="/spooky.png" alt="Project One" class="gallery-image">
                 </button>
