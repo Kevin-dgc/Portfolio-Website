@@ -35,11 +35,9 @@
         </div>
         
         <div class="text-content">
-            <h2>About Kevin!</h2>
-            <p>Welcome to my portfolio to the left you can see my projects! And About me below!.</p>
-            <p></p>
+            <h2>About Me!</h2>
             <p>Hello I am a 2nd Semester CS major at CSUF!.</p>
-            <p>I am a ACM Algorithm board member, I help lead workshops on data structures and algorithms!</p>
+            <p>I am an ACM Algorithm board member, I help lead workshops on data structures and algorithms!</p>
         </div>
     </div>
             
