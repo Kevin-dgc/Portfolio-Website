@@ -1,6 +1,6 @@
-<script>
-
-</script>
+<svelte:head>
+  <title>Kevin</title>
+</svelte:head>
 
 
 <body>
@@ -23,71 +23,37 @@
 
             </footer>
     </div>
+
+    <div class="content-container">
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <h3>Project One</h3>
+                <button onclick="window.location.href='/spooky'">
+                    <img src="/spooky.png" alt="Project One" class="gallery-image">
+                </button>
+            </div>
+        </div>
+        
+        <div class="text-content">
+            <h2>About Kevin!</h2>
+            <p>Welcome to my portfolio to the left you can see my projects! And About me below!.</p>
+            <p></p>
+            <p>Hello I am a 2nd Semester CS major at CSUF!.</p>
+            <p>I am a ACM Algorithm board member, I help lead workshops on data structures and algorithms!</p>
+        </div>
+    </div>
+            
 </body>
 
 
 <style>
-
-:root{
-    --blue: #0D3B66;
-    --eggshell: #FAF0CA;
-    --yellow: #F4D35E;
-    --orange: #EE964B;
-    --tomato: #F95738;
-    --mainFont: font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-body {
-    background-color: var(--eggshell);
-}
-
-header {
-    background-color: var(--yellow);
-    font-family: var(--mainFont);
-    border-radius: .25em;
-    text-align: center;
-    font-size: 3em;
-    width: 32%; 
-    margin: 25px auto 0 auto;
-}
-
-footer {
-    user-select: none;
-    font-family: var(--mainFont);
-    background-color: var(--yellow);
-    border-radius: .5em;
-    color: black;
-    text-align: center;
-    font-size: 1em;
-    position: fixed;
-    bottom: 15px; 
-    width: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-footer a {
-    margin: 0 10px;
-}
-
-footer img {
-    vertical-align: middle;
-    border-radius: 50%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    user-select: none;
-}
-
-footer img.no-circle {
-    user-select: none;
-    border-radius: 0;
-}
-
-pEmail {
-    user-select: all;
-    vertical-align: top;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
+    @import './portfolio.css';
 </style>
+
+
+
+
+
+<script>
+
+</script>
