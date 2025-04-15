@@ -32,6 +32,12 @@
                     <img src="/spooky.png" alt="Project One" class="gallery-image">
                 </button>
             </div>
+            <div class="gallery-item">
+                <h3>Space Themed Club Calendar</h3>
+                <button onclick="window.location.href='/calendar'">
+                    <img src="/calendar.png" alt="Project Two" class="gallery-image">
+                </button>
+            </div>
         </div>
         
         <div class="text-content">
