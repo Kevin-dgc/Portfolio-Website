@@ -20,40 +20,38 @@ const currentYear = new Date().getFullYear();
 
   
 </script>
-<div class="total">
-  <div class="back-button">
-    <button class="back-button" onclick="window.location.href='/'">
-      ← Back to Home Page
-    </button>
-  </div>
-
-  <h1> Year {currentYear}</h1>
-
-  <div class="months-grid">
-      {#each months as month, i}
-        <a href="/calendar/month?monthIndex={i}" class="month-card">
-          <h2>
-            <img alt="{month.name}" src="calendar/{month.img}" style="max-width: 100%; height: auto;" />
-            <!-- <div class="month-name">{month.name}</div> -->
-          </h2>
-        </a>
-      {/each}
-  </div>
-
-  <footer class="footer">
-    <!-- Add / Remove Button -->
-
-    <!-- Add -->
-    <a href="/calendar/add_page" class="add_button"> 
-      <h2> Add</h2>
-    </a>
-
-    <!-- Remove -->
-    <a href="/calendar/remove_page" class="add_button"> 
-      <h2> Remove</h2>
-    </a>
-  </footer>
+<div class="back-button">
+  <button class="back-button" onclick="window.location.href='/'">
+    ← Back to Home Page
+  </button>
 </div>
+
+<h1> Year {currentYear}</h1>
+
+<div class="months-grid">
+    {#each months as month, i}
+      <a href="/calendar/month?monthIndex={i}" class="month-card">
+        <h2>
+          <img alt="{month.name}" src="calendar/{month.img}" style="max-width: 100%; height: auto;" />
+          <!-- <div class="month-name">{month.name}</div> -->
+        </h2>
+      </a>
+    {/each}
+</div>
+
+<footer class="footer">
+  <!-- Add / Remove Button -->
+
+  <!-- Add -->
+  <a href="/calendar/add_page" class="add_button"> 
+    <h2> Add</h2>
+  </a>
+
+  <!-- Remove -->
+  <a href="/calendar/remove_page" class="add_button"> 
+    <h2> Remove</h2>
+  </a>
+</footer>
 
 <style>
   
@@ -110,12 +108,16 @@ const currentYear = new Date().getFullYear();
   .add_button{
     text-align: center;
   }
-  .total {
+  /* .total {
     background-image: url('calendar/frontPageBG.png');
     background-size: cover;
     min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
+  } */
+  :global(body) {
+    background-image: url('calendar/frontPageBG.png');
+    background-size: cover;
   }
   .back-button {
     background: none;
