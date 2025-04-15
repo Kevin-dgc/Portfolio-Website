@@ -1,0 +1,78 @@
+  /* Custom styles - these work with Bootstrap only so dont mess with them pls */
+  .total{
+        background-color: #0E3E7E;
+        background-image: url('/calendar/frontPageBG.png');
+        background-size: cover;
+        min-height: 100vh;
+        min-width: 100vw;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+  
+  .calendar-grid {
+      height: 1300px; /* 13 hours * 100px */
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+  }
+  
+  .hour-line {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .time-labels {
+      position: relative;
+      height: 1300px;
+  }
+  
+  .hour-label {
+      position: absolute;
+      right: 10px;
+      color: white;
+      font-weight: bold;
+  }
+  
+  .event-group {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    
+    /* fixes the two events in the same hour*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+  }
+  
+  .event-card {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-left: 4px solid #0d6efd;
+      margin-bottom: 5px;
+      transition: transform 0.2s;
+      z-index: 1;
+  }
+  
+  .event-card:hover {
+      transform: scale(1.02);
+      z-index: 2;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-body {
+      padding: 0.75rem;
+  }
+  
+  .card-title {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+  }
+  
+  .card-subtitle {
+      font-size: 0.8rem;
+  }
+  
+  .card-text {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+  }
