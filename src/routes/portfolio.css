@@ -1,19 +1,26 @@
 :root{
-    --blue: #0D3B66;
+    --black: #1a1717;
+    --gray: #0e0d0d;
+    --dark-blue: #20335c;
+    --yellow: #fca10e;
+    --light-white: #e5e5e5;
+    --white: #ffffff;
+
+    --mainFont: font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ /* --blue: #0D3B66;
     --eggshell: #FAF0CA;
     --yellow: #F4D35E;
     --orange: #EE964B;
-    --tomato: #F95738;
-    --mainFont: font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
+    --tomato: #F95738; */
 body {
-    background-color: var(--eggshell);
+    background-color: var(--black);
 }
 
 header {
-    background-color: var(--yellow);
+    background-color: var(--dark-blue);
     font-family: var(--mainFont);
+    color: var(--yellow);
     border-radius: .25em;
     text-align: center;
     font-size: 3em;
@@ -24,7 +31,8 @@ header {
 footer {
     user-select: none;
     font-family: var(--mainFont);
-    background-color: var(--yellow);
+    background-color: var(--dark-blue);
+    color: var(--yellow);
     border-radius: .5em;
     color: black;
     text-align: center;
@@ -55,6 +63,7 @@ footer img.no-circle {
 
 pEmail {
     user-select: all;
+    color: var(--yellow);
     vertical-align: top;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -69,7 +78,7 @@ pEmail {
 
 .text-content {
     flex: 3;
-    background-color: white;
+    background-color: var(--dark-blue);
     border-radius: 8px;
     padding: 25px;
     box-shadow: 0 4px 8px rgba(13, 59, 102, 0.15);
@@ -77,12 +86,12 @@ pEmail {
 }
 
 .text-content h2 {
-    color: var(--blue);
+    color: var(--yellow);
     margin-bottom: 20px;
 }
 
 .text-content p {
-    color: var(--blue);
+    color: var(--yellow);
     line-height: 1.6;
 }
 
@@ -90,7 +99,7 @@ pEmail {
     flex: 1;
     max-height: 600px;
     overflow-y: auto;
-    background-color: var(--yellow);
+    background-color: var(--gray);
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(13, 59, 102, 0.15);
@@ -101,21 +110,21 @@ pEmail {
 }
 
 .gallery-container::-webkit-scrollbar-track {
-    background: var(--eggshell);
+    background: var(--yellow);
     border-radius: 4px;
 }
 
 .gallery-container::-webkit-scrollbar-thumb {
-    background: var(--orange);
+    background: var(--yellow);
     border-radius: 4px;
 }
 
 .gallery-container::-webkit-scrollbar-thumb:hover {
-    background: var(--tomato);
+    background: var(--yellow);
 }
 
 .gallery-item {
-    background-color: white;
+    background-color: var(--black);
     border-radius: 8px;
     margin-bottom: 15px;
     padding: 15px;
@@ -128,7 +137,7 @@ pEmail {
 }
 
 .gallery-item h3 {
-    color: var(--blue);
+    color: var(--yellow);
     margin-bottom: 10px;
     text-align: left;
 }
