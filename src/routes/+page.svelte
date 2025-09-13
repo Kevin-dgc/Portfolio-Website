@@ -28,15 +28,21 @@
         <div class="gallery-container">
             <div class="gallery-item">
                 <h3>Spooky Name Generator</h3>
-                <button onclick="window.location.href='/spooky'">
+                <a href="https://namegen.kevingc.dev/">
                     <img src="/spooky.png" alt="Project One" class="gallery-image">
-                </button>
+                </a>
             </div>
             <div class="gallery-item">
                 <h3>Space Themed Club Calendar</h3>
-                <button onclick="window.location.href='/calendar'">
+                <a href="https://calendar.kevingc.dev/">
                     <img src="/calendar.png" alt="Project Two" class="gallery-image">
-                </button>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <h3>Guess What Happened Today</h3>
+                <a href="https://wht.kevingc.dev/">
+                    <img src="/guesswhathappnedtoday.png" alt="Project Two" class="gallery-image">
+                </a>
             </div>
         </div>
         
